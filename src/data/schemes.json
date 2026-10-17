@@ -1,0 +1,640 @@
+{
+  "project": "Government Scheme Navigator",
+  "version": "1.1",
+  "generated_on": "2026-10-15",
+  "purpose": "Prototype dataset for scheme discovery and preliminary matching. This file is not an official government eligibility decision.",
+  "matching_status_values": [
+    "potential_match",
+    "not_a_match_based_on_known_rules",
+    "needs_verification"
+  ],
+  "privacy_note": "Do not collect Aadhaar numbers, bank account numbers, passwords or identity document uploads in the exhibition prototype.",
+  "schemes": [
+    {
+      "id": 1,
+      "name": "Pradhan Mantri Uchchatar Shiksha Protsahan (PM-USP) Central Sector Scheme of Scholarship for College and University Students",
+      "department": "Department of Higher Education, Ministry of Education, Government of India",
+      "scope": "central",
+      "category": [
+        "education",
+        "scholarship",
+        "students"
+      ],
+      "purpose": "Provides financial assistance to meritorious students from families with limited income to help meet day-to-day expenses while pursuing higher studies. Fresh scholarships are based on Class 12 board results and scheme rules.",
+      "benefits": [
+        {
+          "type": "annual_scholarship",
+          "amount_inr": 12000,
+          "condition": "Graduation level for the first three years, subject to current scheme rules"
+        },
+        {
+          "type": "annual_scholarship",
+          "amount_inr": 20000,
+          "condition": "Postgraduate level, subject to current scheme rules"
+        },
+        {
+          "type": "annual_scholarship",
+          "amount_inr": 20000,
+          "condition": "Fourth and fifth year of eligible five-year/integrated professional courses; technical-course rules may differ"
+        }
+      ],
+      "eligibility": {
+        "nationality": "Indian; confirm detailed current guidelines",
+        "class_12_percentile_rule": "Must be above the 80th percentile of successful candidates in the relevant stream from the respective board",
+        "course_mode": "Regular degree course",
+        "institution": "Recognized by AICTE or the relevant regulatory body, as applicable",
+        "annual_family_income_max_inr": 450000,
+        "renewal_min_annual_marks_percent": 50,
+        "renewal_min_attendance_percent": 75,
+        "bank_account_rule": "Aadhaar-seeded bank account in student's name is specified by the scheme page",
+        "exclusions": [
+          "Correspondence/distance-mode students and diploma-course students are not eligible",
+          "Students receiving another scholarship, including certain state scholarship/fee-waiver or reimbursement schemes, are not eligible under the listed scheme rules"
+        ]
+      },
+      "documents": [
+        "Class 12 marksheet (fresh application)",
+        "Family income certificate",
+        "Category/caste certificate for reserved-category applicants, if applicable",
+        "Disability certificate, if applicable",
+        "Previous-year marksheet for renewal"
+      ],
+      "application_process": [
+        "Visit the National Scholarship Portal",
+        "Complete One Time Registration (OTR) and the portal's required authentication",
+        "Submit the scheme application and required details/documents",
+        "Follow institute and portal verification instructions"
+      ],
+      "official_application_url": "https://scholarships.gov.in/",
+      "source_urls": [
+        "https://www.myscheme.gov.in/schemes/csss-cus",
+        "https://scholarships.gov.in/Students"
+      ],
+      "last_verified": "2026-10-10",
+      "data_status": "Compiled from official scheme portal; verify current academic-year notification before making a final eligibility decision",
+      "matching_rules": {
+        "required_profile_fields": [
+          "age",
+          "education_level",
+          "course_mode",
+          "annual_family_income_inr",
+          "class_12_percentile_or_board_rank_status"
+        ],
+        "potential_match_if": [
+          "regular degree course",
+          "annual family income is at or below the listed limit",
+          "Class 12 percentile condition is met",
+          "institution recognition and other conditions are confirmed"
+        ],
+        "needs_verification_if": [
+          "Class 12 percentile information is unavailable",
+          "course/institution recognition is unknown",
+          "another scholarship or fee-waiver benefit is reported"
+        ],
+        "note": "This is a screening aid, not an official eligibility decision."
+      }
+    },
+    {
+      "id": 2,
+      "name": "Uttar Pradesh Scholarship and Fee Reimbursement (scheme family)",
+      "department": "Social Welfare Department / Backward Classes Welfare Department / Tribal Development Department, Government of Uttar Pradesh (scheme depends on applicant category)",
+      "scope": "state",
+      "state": "Uttar Pradesh",
+      "category": [
+        "education",
+        "scholarship",
+        "students"
+      ],
+      "purpose": "Supports eligible school and post-secondary students in Uttar Pradesh through scholarship and/or fee reimbursement, depending on the applicable scheme, course, category and academic year.",
+      "benefits": [
+        {
+          "type": "scholarship_or_fee_reimbursement",
+          "amount_inr": null,
+          "condition": "Amount depends on the specific scheme, course, category, institution and current academic-year rules"
+        }
+      ],
+      "eligibility": {
+        "state_residence": "Uttar Pradesh domicile/residence requirements apply according to the specific scheme",
+        "education_level": "Different schemes cover pre-matric and post-matric/dashmottar students",
+        "category": "Rules differ for General, SC, ST, OBC, Minority and other eligible groups depending on the specific scheme",
+        "annual_family_income_max_inr": null,
+        "income_rule": "Income limits differ by scheme/category and academic year; do not apply one shared limit to all applicants",
+        "academic_requirements": "Course, institution, prior qualification and renewal rules vary",
+        "important_note": "This is a family of schemes, not one single uniform scholarship. Match only after selecting the applicable category/course and current notification."
+      },
+      "documents": [
+        "Aadhaar or other identity details as required by the portal",
+        "UP domicile/residence certificate, if required",
+        "Income certificate",
+        "Caste/category certificate, if applicable",
+        "Previous qualification marksheet",
+        "Fee receipt/admission details",
+        "Bank account details",
+        "Other documents requested by the applicable portal/application"
+      ],
+      "application_process": [
+        "Open the official UP Scholarship portal",
+        "Choose the applicable pre-matric/post-matric scheme and category",
+        "Read the current academic-year instructions",
+        "Register/login, complete the form and upload required documents",
+        "Submit and track institute/department verification"
+      ],
+      "official_application_url": "https://scholarship.up.gov.in/",
+      "source_urls": [
+        "https://scholarship.up.gov.in/",
+        "https://www.india.gov.in/my-government/schemes"
+      ],
+      "last_verified": "2026-10-10",
+      "data_status": "Official portal identified; scheme-specific eligibility, income limits and benefit amounts must be filled from the current notification before automated matching",
+      "matching_rules": {
+        "required_profile_fields": [
+          "state",
+          "education_level",
+          "course",
+          "category",
+          "annual_family_income_inr"
+        ],
+        "potential_match_if": [
+          "state is Uttar Pradesh",
+          "student's course/category matches a currently open scheme"
+        ],
+        "needs_verification_if": [
+          "specific scheme/category not selected",
+          "current-year income limit or benefit amount not confirmed"
+        ],
+        "note": "Do not treat this broad scheme family as one rule set."
+      }
+    },
+    {
+      "id": 3,
+      "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+      "department": "Department of Agriculture and Farmers Welfare, Ministry of Agriculture and Farmers Welfare, Government of India",
+      "scope": "central",
+      "category": [
+        "farmers",
+        "agriculture",
+        "financial assistance"
+      ],
+      "purpose": "Provides income support to eligible landholding farmer families, subject to scheme conditions and exclusion categories.",
+      "benefits": [
+        {
+          "type": "income_support",
+          "amount_inr": 6000,
+          "frequency": "per year",
+          "payment_schedule": "Three equal installments, subject to eligibility and verification"
+        }
+      ],
+      "eligibility": {
+        "farmer_family": "Eligible landholding farmer family, as identified/verified by the State or UT under scheme guidelines",
+        "family_definition": "Husband, wife and minor children",
+        "land_record_requirement": "Landholding and record conditions must be verified under current guidelines",
+        "exclusions": [
+          "Institutional landholders",
+          "Certain current/former constitutional post holders and elected representatives",
+          "Certain serving/retired government employees, subject to listed exceptions",
+          "Income-tax payers in the last assessment year",
+          "Certain professionals practising in registered professions",
+          "Other exclusion categories in official guidelines"
+        ],
+        "ekyc": "eKYC is mandatory for registered beneficiaries"
+      },
+      "documents": [
+        "Aadhaar and eKYC as required",
+        "Landholding/land-record details",
+        "Bank account details",
+        "Other identity and registration information requested by the official portal/state verification process"
+      ],
+      "application_process": [
+        "Use the official PM-KISAN portal",
+        "Select New Farmer Registration if applicable",
+        "Provide required identity, land and bank details",
+        "Complete eKYC and follow state verification/status instructions"
+      ],
+      "official_application_url": "https://pmkisan.gov.in/",
+      "source_urls": [
+        "https://pmkisan.gov.in/",
+        "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1575610&lang=2&reg=48"
+      ],
+      "last_verified": "2026-10-10",
+      "data_status": "Compiled from official PM-KISAN portal and PIB; verify current exclusion rules and land-record requirements",
+      "matching_rules": {
+        "required_profile_fields": [
+          "occupation",
+          "owns_or_has_eligible_landholding",
+          "land_record_status",
+          "income_tax_payer_status",
+          "government_employment_or_exclusion_status"
+        ],
+        "potential_match_if": [
+          "profile indicates farmer and eligible landholding may be present",
+          "no known exclusion is reported"
+        ],
+        "needs_verification_if": [
+          "land records are unknown",
+          "any exclusion question is unanswered",
+          "eKYC/registration status is unknown"
+        ],
+        "note": "Occupation as farmer alone is not sufficient to confirm eligibility."
+      }
+    },
+    {
+      "id": 4,
+      "name": "Pradhan Mantri Ujjwala Yojana (PMUY 2.0)",
+      "department": "Ministry of Petroleum and Natural Gas, Government of India",
+      "scope": "central",
+      "category": [
+        "women",
+        "households",
+        "LPG",
+        "social welfare"
+      ],
+      "purpose": "Supports eligible adult women from poor households in obtaining an LPG connection, subject to current scheme requirements and household verification.",
+      "benefits": [
+        {
+          "type": "deposit_free_LPG_connection",
+          "amount_inr": null,
+          "condition": "Connection equipment and installation support are subject to current scheme rules."
+        },
+        {
+          "type": "first_refill_and_stove",
+          "amount_inr": null,
+          "condition": "Listed among scheme benefits; confirm current application terms with the official portal or distributor."
+        }
+      ],
+      "eligibility": {
+        "applicant_gender": "Woman",
+        "minimum_age": 18,
+        "household_condition": "No existing LPG connection from an Oil Marketing Company in the same household, subject to current rules.",
+        "economic_condition": "Applicant must meet the prescribed poor-household declaration and applicable category/rules.",
+        "eligible_categories_as_listed_on_official_portal": [
+          "SC households",
+          "ST households",
+          "Pradhan Mantri Awas Yojana (Gramin) households",
+          "Most Backward Classes",
+          "Antyodaya Anna Yojana households",
+          "Tea and ex-tea garden tribes",
+          "Forest dwellers",
+          "People residing in islands and river islands",
+          "SECC households (AHL TIN)",
+          "Other poor households meeting the prescribed declaration"
+        ],
+        "important_note": "Final eligibility depends on household and distributor verification."
+      },
+      "documents": [
+        "Prescribed KYC application form",
+        "Applicant identity details as required by the official process",
+        "Address proof if required",
+        "Ration card or other prescribed family-composition document",
+        "Bank account proof",
+        "Prescribed deprivation declaration",
+        "Other documents requested by the LPG distributor"
+      ],
+      "application_process": [
+        "Read the current PMUY application instructions",
+        "Apply through the official PMUY portal or an LPG distributor",
+        "Complete KYC and provide required household information",
+        "Submit the prescribed declaration and supporting details",
+        "Follow distributor verification instructions"
+      ],
+      "official_application_url": "https://www.pmuy.gov.in/ujjwala2.html",
+      "source_urls": [
+        "https://www.pmuy.gov.in/ujjwala2.html",
+        "https://pmuy.gov.in/faq.html"
+      ],
+      "last_verified": "2026-10-15",
+      "data_status": "Compiled from official PMUY pages identified in the scheme summary; confirm current requirements before use.",
+      "matching_rules": {
+        "required_profile_fields": [
+          "gender",
+          "age",
+          "household_has_existing_lpg_connection",
+          "poor_household_or_eligible_category"
+        ],
+        "potential_match_if": [
+          "applicant is a woman aged 18 or above",
+          "household does not have an existing LPG connection",
+          "poor-household condition may be met"
+        ],
+        "needs_verification_if": [
+          "household LPG status is unknown",
+          "deprivation/category information is missing",
+          "current application conditions are not confirmed"
+        ],
+        "note": "Do not collect Aadhaar numbers or upload identity documents in the exhibition prototype."
+      }
+    },
+    {
+      "id": 5,
+      "name": "Pradhan Mantri Awas Yojana - Urban 2.0 (PMAY-U 2.0)",
+      "department": "Ministry of Housing and Urban Affairs, Government of India",
+      "scope": "central",
+      "category": [
+        "housing",
+        "urban households",
+        "social welfare"
+      ],
+      "purpose": "Provides support through applicable housing verticals for eligible urban households to construct, purchase or access affordable housing, subject to current guidelines.",
+      "benefits": [
+        {
+          "type": "housing_assistance",
+          "amount_inr": 250000,
+          "condition": "Up to ₹2.5 lakh central assistance is listed for eligible Beneficiary Led Construction cases; actual assistance depends on the applicable vertical and rules."
+        },
+        {
+          "type": "interest_subsidy",
+          "amount_inr": 180000,
+          "condition": "Maximum interest subsidy listed for eligible Interest Subsidy Scheme cases; actual benefit depends on loan/property conditions and current rules."
+        }
+      ],
+      "eligibility": {
+        "residence": "Urban area covered by PMAY-U 2.0",
+        "house_ownership": "Family must not own a pucca house anywhere in India, subject to current scheme rules.",
+        "prior_housing_benefit": "Prior housing assistance may affect eligibility; verify the current operational guidelines.",
+        "annual_household_income_bands_inr": {
+          "EWS_max": 300000,
+          "LIG_min": 300000,
+          "LIG_max": 600000,
+          "MIG_min": 600000,
+          "MIG_max": 900000
+        },
+        "note": "Vertical-specific conditions and income-band boundary rules apply. Confirm the current vertical before matching."
+      },
+      "documents": [
+        "Identity and household details requested by the official application",
+        "Proof of annual household income",
+        "Declaration/details regarding pucca house ownership",
+        "Details of prior housing assistance",
+        "Land/ownership documents or home-loan documents where required",
+        "Other documents requested by the relevant authority"
+      ],
+      "application_process": [
+        "Read the current PMAY-U 2.0 guidelines",
+        "Check eligibility on the official PMAY-MIS portal",
+        "Identify the applicable scheme vertical",
+        "Complete the demand/application process and provide required information",
+        "Follow verification instructions from the relevant authority"
+      ],
+      "official_application_url": "https://www.pmaymis.gov.in/PMAYMIS2_2024/PmayDefault.aspx",
+      "source_urls": [
+        "https://pmay-urban.gov.in/index.php/pmay-u-2.0-guidelines",
+        "https://www.pmaymis.gov.in/PMAYMIS2_2024/PmayDefault.aspx"
+      ],
+      "last_verified": "2026-10-15",
+      "data_status": "Initial prototype entry based on the identified official guidelines; verify current income bands, vertical-specific benefits and conditions.",
+      "matching_rules": {
+        "required_profile_fields": [
+          "residence_type",
+          "annual_family_income_inr",
+          "owns_pucca_house_in_india",
+          "received_housing_benefit_in_last_20_years",
+          "housing_need_or_vertical"
+        ],
+        "potential_match_if": [
+          "applicant is in an eligible urban area",
+          "family reports no pucca house in India",
+          "household income falls within a relevant band"
+        ],
+        "needs_verification_if": [
+          "urban coverage is unknown",
+          "prior housing benefit or house ownership is unclear",
+          "applicable vertical is not selected"
+        ],
+        "note": "A profile-only match cannot guarantee eligibility or a fixed benefit."
+      }
+    },
+    {
+      "id": 6,
+      "name": "General Pre-Matric Scholarship - Uttar Pradesh",
+      "department": "Social Welfare Department, Government of Uttar Pradesh",
+      "scope": "state",
+      "state": "Uttar Pradesh",
+      "category": [
+        "education",
+        "scholarship",
+        "school students"
+      ],
+      "purpose": "Provides scholarship support to eligible students in the specified school classes under the applicable Uttar Pradesh scheme and academic-year rules.",
+      "benefits": [
+        {
+          "type": "annual_scholarship",
+          "amount_inr": 3000,
+          "frequency": "per year",
+          "condition": "Amount and coverage must be confirmed against the current academic-year notification and the specific applicant category."
+        }
+      ],
+      "eligibility": {
+        "state_residence": "Uttar Pradesh residence/domicile requirements apply",
+        "category": "General category, subject to the specific scheme's current rules",
+        "education_level": "Listed for eligible Class 9–10 students; confirm current scheme coverage",
+        "annual_family_income_max_inr": 250000,
+        "age_rule": "Ages 12–20 were listed in the source scheme summary; verify the current notification before using this as a hard matching rule.",
+        "important_note": "Do not make a final eligibility decision from this summary alone."
+      },
+      "documents": [
+        "Previous qualifying examination marksheet",
+        "Family income certificate",
+        "Bank account proof, if required by the current portal",
+        "Enrollment/fee details, if required",
+        "Other documents listed in the current application instructions"
+      ],
+      "application_process": [
+        "Open the official UP Scholarship portal",
+        "Choose the applicable scheme and academic year",
+        "Read current eligibility and document instructions",
+        "Complete the application and submit required details",
+        "Track institute and department verification"
+      ],
+      "official_application_url": "https://scholarship.up.gov.in/",
+      "source_urls": [
+        "https://www.myscheme.gov.in/schemes/gpmsup",
+        "https://scholarship.up.gov.in/"
+      ],
+      "last_verified": "2026-10-15",
+      "data_status": "Initial prototype entry based on the listed scheme summary; confirm current-year benefit, class, age and income conditions before production use.",
+      "matching_rules": {
+        "required_profile_fields": [
+          "state",
+          "education_level",
+          "category",
+          "annual_family_income_inr"
+        ],
+        "potential_match_if": [
+          "state is Uttar Pradesh",
+          "student's class and category match the current scheme",
+          "reported annual family income is within the confirmed limit"
+        ],
+        "needs_verification_if": [
+          "current-year notification is not checked",
+          "class/category coverage or income limit is uncertain",
+          "required supporting information is missing"
+        ],
+        "note": "Treat this as preliminary screening, not an official eligibility decision."
+      }
+    },
+    {
+      "id": 7,
+      "name": "PM-YASASVI: Top Class College Education for OBC, EBC and DNT Students",
+      "department": "Department of Social Justice and Empowerment, Government of India",
+      "scope": "central",
+      "category": [
+        "education",
+        "scholarship",
+        "OBC",
+        "EBC",
+        "DNT",
+        "college students"
+      ],
+      "purpose": "Supports eligible OBC, EBC and DNT students admitted to notified institutions for specified full-time courses, subject to scheme rules and available slots.",
+      "benefits": [
+        {
+          "type": "tuition_and_non_refundable_charges",
+          "amount_inr": null,
+          "condition": "Coverage is subject to scheme ceilings, eligible charges, institution and current guidelines."
+        },
+        {
+          "type": "living_expenses",
+          "amount_inr": 3000,
+          "frequency": "per month",
+          "condition": "Subject to current scheme rules and eligibility."
+        },
+        {
+          "type": "books_and_stationery",
+          "amount_inr": 5000,
+          "frequency": "per year",
+          "condition": "Subject to current scheme rules."
+        },
+        {
+          "type": "computer_or_laptop_assistance",
+          "amount_inr": 45000,
+          "condition": "One-time assistance ceiling as listed in the scheme summary; verify current rules."
+        }
+      ],
+      "eligibility": {
+        "nationality": "Indian",
+        "category": "OBC, EBC or DNT, subject to applicable certificate and scheme definitions",
+        "annual_family_income_max_inr": 250000,
+        "course_and_institution": "Admission to a prescribed full-time course at an institution notified for the scheme is required.",
+        "selection": "Subject to available slots and current scheme conditions.",
+        "sibling_rule": "The scheme summary lists a limit of no more than two siblings in a family; verify current guidelines.",
+        "important_note": "Institution list, eligible course, benefit ceilings and application window must be checked for the relevant year."
+      },
+      "documents": [
+        "Category certificate",
+        "Family income certificate",
+        "Admission and institution/course documents",
+        "Previous academic records",
+        "Bank details as requested by the official portal",
+        "Other documents required by current guidelines"
+      ],
+      "application_process": [
+        "Read the current scheme guidelines",
+        "Check whether the institution and course are covered",
+        "Visit the National Scholarship Portal when applications are open",
+        "Submit the application and required details",
+        "Follow institute and portal verification instructions"
+      ],
+      "official_application_url": "https://scholarships.gov.in/",
+      "source_urls": [
+        "https://www.myscheme.gov.in/schemes/pm-yasasvitcceobcebcdnts",
+        "https://scholarships.gov.in/"
+      ],
+      "last_verified": "2026-10-15",
+      "data_status": "Initial prototype entry based on the listed scheme summary; confirm current guidelines, institution list, benefit ceilings and application dates.",
+      "matching_rules": {
+        "required_profile_fields": [
+          "education_level",
+          "category",
+          "annual_family_income_inr",
+          "course",
+          "institution"
+        ],
+        "potential_match_if": [
+          "category is OBC, EBC or DNT",
+          "annual family income is within the confirmed limit",
+          "course and institution are covered by the current scheme"
+        ],
+        "needs_verification_if": [
+          "category certificate or income details are not confirmed",
+          "institution/course coverage is unknown",
+          "current-year application conditions are not checked"
+        ],
+        "note": "A profile match does not guarantee selection or payment."
+      }
+    },
+    {
+      "id": 8,
+      "name": "Post-Matric Scholarship for OBC Students (Centrally Sponsored Scheme)",
+      "department": "Ministry of Social Justice and Empowerment, Government of India; implementation conditions may be set by the relevant State/UT",
+      "scope": "central",
+      "category": [
+        "education",
+        "scholarship",
+        "OBC",
+        "post-matric students"
+      ],
+      "purpose": "Provides scholarship support to eligible OBC students pursuing post-matriculation or post-secondary studies, under applicable central and State/UT rules.",
+      "benefits": [
+        {
+          "type": "maintenance_allowance",
+          "amount_inr": null,
+          "condition": "Allowance varies by course group and hosteller/day-scholar status; confirm current State/UT guidelines."
+        },
+        {
+          "type": "eligible_fee_support",
+          "amount_inr": null,
+          "condition": "Subject to scheme rules, approved fees, course and current State/UT implementation."
+        }
+      ],
+      "eligibility": {
+        "nationality": "Indian",
+        "category": "OBC category recognized by the relevant State/UT",
+        "education_level": "Post-matriculation or post-secondary study at a recognized institution",
+        "annual_family_income_max_inr": null,
+        "income_rule": "Confirm the current income ceiling with the relevant State/UT and academic-year guidelines.",
+        "important_note": "Do not hard-code one income ceiling or benefit amount for every State/UT without checking current rules."
+      },
+      "documents": [
+        "OBC/category certificate",
+        "Income certificate",
+        "Previous educational certificates/marksheets",
+        "Admission/enrollment details",
+        "Bank account details as required",
+        "Other documents requested by the current portal"
+      ],
+      "application_process": [
+        "Check the current guidelines for the relevant State/UT",
+        "Visit the applicable official scholarship portal",
+        "Select the relevant post-matric scheme",
+        "Complete the application and provide required details",
+        "Follow institution and department verification instructions"
+      ],
+      "official_application_url": "https://scholarships.gov.in/",
+      "source_urls": [
+        "https://www.myscheme.gov.in/schemes/csspostmsossi",
+        "https://scholarships.gov.in/",
+        "https://scholarship.up.gov.in/"
+      ],
+      "last_verified": "2026-10-15",
+      "data_status": "Initial prototype entry; income ceiling, amount and application route must be confirmed against the current rules of the relevant State/UT.",
+      "matching_rules": {
+        "required_profile_fields": [
+          "state",
+          "education_level",
+          "category",
+          "course",
+          "annual_family_income_inr"
+        ],
+        "potential_match_if": [
+          "applicant's category and course fall within the current scheme",
+          "institution and income conditions are satisfied under the relevant State/UT rules"
+        ],
+        "needs_verification_if": [
+          "State/UT income ceiling or benefit amount is unknown",
+          "institution/course eligibility is not confirmed",
+          "current-year application route is unclear"
+        ],
+        "note": "Use State/UT-specific rules; do not infer eligibility from category alone."
+      }
+    }
+  ]
+}
