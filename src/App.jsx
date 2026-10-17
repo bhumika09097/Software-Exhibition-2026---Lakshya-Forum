@@ -261,8 +261,59 @@ const copy = {
     class12Condition: "Class 12 result above the 80th percentile",
     otherScholarshipCondition: "Not receiving another scholarship or fee waiver",
     institutionCondition: "Institution recognition and course details",
+    courseModeOptionRegular: "Yes, a regular degree course",
+    courseModeOptionOther: "No / another course type",
     stateCondition: "Uttar Pradesh residence",
     upSchemeCondition: "Applicable UP scheme, course and category",
+    currentRulesCondition: "Confirm the current academic-year rules on the official portal",
+    stateIncomeLimitCondition: "Confirm the current income limit for your State/UT",
+    institutionQuestion: "Is your institution recognized/notified for this scheme?",
+    landholderQuestion: "Is this landholding held by an institution?",
+    pmuyCategoryQuestion: "Which eligible PMUY household category applies?",
+    pmayCoverageQuestion: "Is your city/area covered by PMAY-U 2.0?",
+    pmayVerticalQuestion: "Which PMAY-U 2.0 housing option are you considering?",
+    schoolClassQuestion: "Which class are you currently studying in?",
+    applicantCategoryQuestion: "What is the applicant's category?",
+    upCourseQuestion: "Which UP scholarship course group applies?",
+    yasasviCategoryQuestion: "Does the applicant belong to OBC, EBC or DNT?",
+    fullTimeQuestion: "Are you enrolled in a full-time course?",
+    siblingLimitQuestion: "Does your family meet the PM-YASASVI limit of no more than two siblings?",
+    postMatricQuestion: "Are you studying in a post-matric/post-secondary course?",
+    pmuySc: "SC household",
+    pmuySt: "ST household",
+    pmuyPmay: "PMAY-G household",
+    pmuyMbc: "Most Backward Classes household",
+    pmuyAntyodaya: "Antyodaya Anna Yojana household",
+    pmuyTea: "Tea/ex-tea garden tribe household",
+    pmuyForest: "Forest-dwelling household",
+    pmuyIsland: "Island/river-island household",
+    pmuySecc: "SECC household",
+    pmuyOtherPoor: "Other household meeting the prescribed poor-household declaration",
+    pmuyNone: "None of these / not eligible under these listed categories",
+    blc: "Beneficiary-led construction",
+    affordableHousing: "Affordable housing in partnership",
+    interestSubsidy: "Interest subsidy",
+    class9: "Class 9",
+    class10: "Class 10",
+    classOther: "Another class",
+    categoryGeneral: "General",
+    categorySc: "SC",
+    categorySt: "ST",
+    categoryObc: "OBC",
+    categoryEbc: "EBC",
+    categoryDnt: "DNT",
+    categoryOther: "Another category",
+    upPreMatric: "Pre-matric (school)",
+    upPostMatric: "Post-matric (school)",
+    upHigherEducation: "Post-secondary/higher education",
+    upOtherCourse: "Another course / not sure",
+    answerSchemeQuestions: "Scheme-specific questions",
+    schemeQuestionsIntro: "These questions are added to your shared profile. Choose “Not sure” if you need to check.",
+    saveSchemeAnswers: "Save answers and update screening",
+    commonProfileNeeded: "Complete or update your shared profile to check the common conditions too.",
+    openCommonProfile: "Update shared profile",
+    schemeAnswersSaved: "Your answers are saved for this visit.",
+    currentRuleNote: "A positive result is only an initial match. Confirm current rules and documents with the official scheme.",
     farmerCondition: "Farmer",
     landCondition: "Eligible landholding",
     landRecordCondition: "Land records",
@@ -431,8 +482,59 @@ const copy = {
     class12Condition: "कक्षा 12 में 80वें पर्सेंटाइल से ऊपर परिणाम",
     otherScholarshipCondition: "दूसरी छात्रवृत्ति या शुल्क छूट नहीं मिल रही",
     institutionCondition: "संस्थान की मान्यता और पाठ्यक्रम की जानकारी",
+    courseModeOptionRegular: "हाँ, नियमित डिग्री पाठ्यक्रम",
+    courseModeOptionOther: "नहीं / कोई अन्य पाठ्यक्रम",
     stateCondition: "उत्तर प्रदेश का निवास",
     upSchemeCondition: "लागू UP योजना, पाठ्यक्रम और वर्ग",
+    currentRulesCondition: "आधिकारिक पोर्टल पर मौजूदा शैक्षणिक वर्ष के नियम जाँचें",
+    stateIncomeLimitCondition: "अपने राज्य/केंद्र शासित प्रदेश की मौजूदा आय सीमा जाँचें",
+    institutionQuestion: "क्या आपका संस्थान इस योजना के लिए मान्यता-प्राप्त/सूचीबद्ध है?",
+    landholderQuestion: "क्या इस भूमि का मालिक कोई संस्था है?",
+    pmuyCategoryQuestion: "PMUY की कौन-सी पात्र परिवार श्रेणी लागू होती है?",
+    pmayCoverageQuestion: "क्या आपका शहर/क्षेत्र PMAY-U 2.0 में शामिल है?",
+    pmayVerticalQuestion: "आप PMAY-U 2.0 का कौन-सा आवास विकल्प देख रहे हैं?",
+    schoolClassQuestion: "आप अभी किस कक्षा में पढ़ रहे हैं?",
+    applicantCategoryQuestion: "आवेदक का वर्ग क्या है?",
+    upCourseQuestion: "UP छात्रवृत्ति का कौन-सा पाठ्यक्रम समूह लागू होता है?",
+    yasasviCategoryQuestion: "क्या आवेदक OBC, EBC या DNT वर्ग से है?",
+    fullTimeQuestion: "क्या आप पूर्णकालिक पाठ्यक्रम में दाख़िल हैं?",
+    siblingLimitQuestion: "क्या आपका परिवार PM-YASASVI की अधिकतम दो भाई-बहनों वाली सीमा पूरी करता है?",
+    postMatricQuestion: "क्या आप मैट्रिक के बाद/उच्च शिक्षा पाठ्यक्रम में पढ़ रहे हैं?",
+    pmuySc: "SC परिवार",
+    pmuySt: "ST परिवार",
+    pmuyPmay: "PMAY-G परिवार",
+    pmuyMbc: "अति पिछड़ा वर्ग परिवार",
+    pmuyAntyodaya: "अंत्योदय अन्न योजना परिवार",
+    pmuyTea: "चाय/पूर्व-चाय बागान जनजाति परिवार",
+    pmuyForest: "वनवासी परिवार",
+    pmuyIsland: "द्वीप/नदी-द्वीप निवासी परिवार",
+    pmuySecc: "SECC परिवार",
+    pmuyOtherPoor: "निर्धारित गरीब-परिवार घोषणा पूरी करने वाला अन्य परिवार",
+    pmuyNone: "इनमें से कोई नहीं / सूचीबद्ध श्रेणी लागू नहीं",
+    blc: "लाभार्थी-आधारित निर्माण",
+    affordableHousing: "साझेदारी में किफ़ायती आवास",
+    interestSubsidy: "ब्याज सब्सिडी",
+    class9: "कक्षा 9",
+    class10: "कक्षा 10",
+    classOther: "कोई अन्य कक्षा",
+    categoryGeneral: "सामान्य",
+    categorySc: "SC",
+    categorySt: "ST",
+    categoryObc: "OBC",
+    categoryEbc: "EBC",
+    categoryDnt: "DNT",
+    categoryOther: "कोई अन्य वर्ग",
+    upPreMatric: "प्री-मैट्रिक (स्कूल)",
+    upPostMatric: "पोस्ट-मैट्रिक (स्कूल)",
+    upHigherEducation: "मैट्रिक के बाद/उच्च शिक्षा",
+    upOtherCourse: "अन्य पाठ्यक्रम / पक्का नहीं",
+    answerSchemeQuestions: "योजना से जुड़े अतिरिक्त सवाल",
+    schemeQuestionsIntro: "इन जवाबों को आपकी साझा प्रोफ़ाइल में जोड़ा जाएगा। जाँच करनी हो तो “पक्का नहीं” चुनें।",
+    saveSchemeAnswers: "जवाब सेव करके जाँच अपडेट करें",
+    commonProfileNeeded: "साझा शर्तें भी जाँचने के लिए अपनी साझा प्रोफ़ाइल पूरी करें या अपडेट करें।",
+    openCommonProfile: "साझा प्रोफ़ाइल अपडेट करें",
+    schemeAnswersSaved: "इस विज़िट के लिए आपके जवाब सेव हैं।",
+    currentRuleNote: "सकारात्मक नतीजा केवल शुरुआती मेल है। मौजूदा नियम और दस्तावेज़ आधिकारिक योजना से ज़रूर जाँचें।",
     farmerCondition: "किसान",
     landCondition: "पात्र भूमिधारक",
     landRecordCondition: "भूमि रिकॉर्ड",
@@ -540,6 +642,51 @@ const categoryText = {
   hi: { all: "सभी योजनाएँ", farming: "किसान", education: "शिक्षा", housing: "आवास", women: "महिला एवं परिवार" },
 };
 
+const schemeQuestionDefinitions = {
+  1: [
+    { key: "courseMode", label: "courseModeLabel", options: ["courseModeOptionRegular", "courseModeOptionOther"], values: ["regular", "other"] },
+    { key: "class12Percentile", label: "class12Label" },
+    { key: "otherScholarship", label: "scholarshipLabel" },
+    { key: "recognizedInstitution", label: "institutionQuestion" },
+  ],
+  2: [
+    { key: "courseGroup", label: "upCourseQuestion", options: ["upPreMatric", "upPostMatric", "upHigherEducation", "upOtherCourse"], values: ["pre_matric", "post_matric", "higher_education", "other"] },
+    { key: "applicantCategory", label: "applicantCategoryQuestion", options: ["categoryGeneral", "categorySc", "categorySt", "categoryObc", "categoryOther"], values: ["general", "sc", "st", "obc", "other"] },
+  ],
+  3: [
+    { key: "eligibleLand", label: "landLabel" },
+    { key: "landRecord", label: "landRecordLabel" },
+    { key: "incomeTax", label: "incomeTaxLabel" },
+    { key: "govExclusion", label: "governmentJobLabel" },
+    { key: "institutionalLandholding", label: "landholderQuestion" },
+  ],
+  4: [
+    { key: "existingLpg", label: "lpgLabel" },
+    { key: "householdCategory", label: "pmuyCategoryQuestion", options: ["pmuySc", "pmuySt", "pmuyPmay", "pmuyMbc", "pmuyAntyodaya", "pmuyTea", "pmuyForest", "pmuyIsland", "pmuySecc", "pmuyOtherPoor", "pmuyNone"], values: ["sc", "st", "pmay_g", "mbc", "antyodaya", "tea", "forest", "island", "secc", "other_poor", "none"] },
+  ],
+  5: [
+    { key: "ownsHouse", label: "ownsHouseLabel" },
+    { key: "priorHousing", label: "priorHousingLabel" },
+    { key: "coveredArea", label: "pmayCoverageQuestion" },
+    { key: "housingOption", label: "pmayVerticalQuestion", options: ["blc", "affordableHousing", "interestSubsidy"], values: ["blc", "affordable_housing", "interest_subsidy"] },
+  ],
+  6: [
+    { key: "schoolClass", label: "schoolClassQuestion", options: ["class9", "class10", "classOther"], values: ["class9", "class10", "other"] },
+    { key: "applicantCategory", label: "applicantCategoryQuestion", options: ["categoryGeneral", "categorySc", "categorySt", "categoryObc", "categoryEbc", "categoryDnt", "categoryOther"], values: ["general", "sc", "st", "obc", "ebc", "dnt", "other"] },
+  ],
+  7: [
+    { key: "applicantCategory", label: "applicantCategoryQuestion", options: ["categoryGeneral", "categoryObc", "categoryEbc", "categoryDnt", "categorySc", "categorySt", "categoryOther"], values: ["general", "obc", "ebc", "dnt", "sc", "st", "other"] },
+    { key: "fullTimeCourse", label: "fullTimeQuestion" },
+    { key: "recognizedInstitution", label: "institutionQuestion" },
+    { key: "siblingLimit", label: "siblingLimitQuestion" },
+  ],
+  8: [
+    { key: "applicantCategory", label: "applicantCategoryQuestion", options: ["categoryGeneral", "categoryObc", "categoryEbc", "categoryDnt", "categorySc", "categorySt", "categoryOther"], values: ["general", "obc", "ebc", "dnt", "sc", "st", "other"] },
+    { key: "postMatricCourse", label: "postMatricQuestion" },
+    { key: "recognizedInstitution", label: "institutionQuestion" },
+  ],
+};
+
 function evaluateScheme(scheme, profile, text, language) {
   const fieldName = (field) => fieldLabels[language][field] || field.replaceAll("_", " ");
   if (!profile.submitted) return {
@@ -550,6 +697,7 @@ function evaluateScheme(scheme, profile, text, language) {
   };
 
   const checks = [];
+  const answers = profile.schemeAnswers?.[scheme.id] || {};
   const add = (label, value) => checks.push({ label, value });
   const yesNo = (value) => value === "yes" ? true : value === "no" ? false : null;
   const income = profile.annualIncome === "" ? null : Number(profile.annualIncome);
@@ -558,30 +706,59 @@ function evaluateScheme(scheme, profile, text, language) {
     add(text.studentCondition, profile.roles.length ? profile.roles.includes("student") : null);
     add(text.scholarshipAgeCondition, profile.age === "" ? null : true);
     add(text.incomeCondition, income === null ? null : income <= 450000);
-    add(text.courseCondition, profile.courseMode === "regular" ? true : profile.courseMode === "other" ? false : null);
-    add(text.class12Condition, yesNo(profile.class12Percentile));
-    add(text.otherScholarshipCondition, profile.otherScholarship === "no" ? true : profile.otherScholarship === "yes" ? false : null);
-    add(text.institutionCondition, null);
+    add(text.courseCondition, answers.courseMode === "regular" ? true : answers.courseMode === "other" ? false : null);
+    add(text.class12Condition, yesNo(answers.class12Percentile));
+    add(text.otherScholarshipCondition, answers.otherScholarship === "no" ? true : answers.otherScholarship === "yes" ? false : null);
+    add(text.institutionCondition, yesNo(answers.recognizedInstitution));
   } else if (scheme.id === "2") {
     add(text.studentCondition, profile.roles.length ? profile.roles.includes("student") : null);
     add(text.stateCondition, profile.state ? profile.state === "Uttar Pradesh" : null);
-    add(text.upSchemeCondition, null);
+    add(text.upSchemeCondition, answers.courseGroup ? answers.courseGroup === "other" ? false : true : null);
+    add(text.applicantCategoryQuestion, answers.applicantCategory ? true : null);
+    add(text.currentRulesCondition, null);
   } else if (scheme.id === "3") {
     add(text.farmerCondition, profile.roles.length ? profile.roles.includes("farmer") : null);
-    add(text.landCondition, yesNo(profile.eligibleLand));
-    add(text.landRecordCondition, profile.landRecord === "yes" ? true : profile.landRecord === "no" ? false : null);
-    add(text.taxCondition, profile.incomeTax === "no" ? true : profile.incomeTax === "yes" ? false : null);
-    add(text.employmentCondition, profile.govExclusion === "no" ? true : profile.govExclusion === "yes" ? false : null);
+    add(text.landCondition, yesNo(answers.eligibleLand));
+    add(text.landholderQuestion, answers.institutionalLandholding === "no" ? true : answers.institutionalLandholding === "yes" ? false : null);
+    add(text.landRecordCondition, answers.landRecord === "yes" ? true : answers.landRecord === "no" ? false : null);
+    add(text.taxCondition, answers.incomeTax === "no" ? true : answers.incomeTax === "yes" ? false : null);
+    add(text.employmentCondition, answers.govExclusion === "no" ? true : answers.govExclusion === "yes" ? false : null);
   } else if (scheme.id === "4") {
     add(text.womanCondition, profile.roles.length ? profile.roles.includes("adult_woman") : null);
     add(text.ageCondition, profile.age === "" ? null : Number(profile.age) >= 18);
-    add(text.noLpgCondition, profile.existingLpg === "no" ? true : profile.existingLpg === "yes" ? false : null);
-    add(text.poorHouseholdCondition, yesNo(profile.eligibleHousehold));
+    add(text.noLpgCondition, answers.existingLpg === "no" ? true : answers.existingLpg === "yes" ? false : null);
+    add(text.poorHouseholdCondition, answers.householdCategory
+      ? answers.householdCategory === "none" ? false : true
+      : null);
   } else if (scheme.id === "5") {
     add(text.urbanCondition, profile.residence === "urban" ? true : profile.residence === "rural" ? false : null);
     add(text.incomeBandCondition, income === null ? null : income <= 900000);
-    add(text.noHouseCondition, profile.ownsHouse === "no" ? true : profile.ownsHouse === "yes" ? false : null);
-    add(text.noPriorHousingCondition, profile.priorHousing === "no" ? true : profile.priorHousing === "yes" ? false : null);
+    add(text.noHouseCondition, answers.ownsHouse === "no" ? true : answers.ownsHouse === "yes" ? false : null);
+    add(text.noPriorHousingCondition, answers.priorHousing === "no" ? true : answers.priorHousing === "yes" ? false : null);
+    add(text.pmayCoverageQuestion, yesNo(answers.coveredArea));
+    add(text.pmayVerticalQuestion, answers.housingOption ? answers.housingOption === "unsure" ? null : true : null);
+  } else if (scheme.id === "6") {
+    add(text.studentCondition, profile.roles.length ? profile.roles.includes("student") : null);
+    add(text.stateCondition, profile.state ? profile.state === "Uttar Pradesh" : null);
+    add(text.schoolClassQuestion, answers.schoolClass ? ["class9", "class10"].includes(answers.schoolClass) : null);
+    add(text.applicantCategoryQuestion, answers.applicantCategory ? answers.applicantCategory === "general" : null);
+    add(text.incomeCondition, income === null ? null : income <= 250000);
+    add(text.currentRulesCondition, null);
+  } else if (scheme.id === "7") {
+    add(text.yasasviCategoryQuestion, answers.applicantCategory
+      ? ["obc", "ebc", "dnt"].includes(answers.applicantCategory)
+      : null);
+    add(text.fullTimeQuestion, yesNo(answers.fullTimeCourse));
+    add(text.institutionCondition, yesNo(answers.recognizedInstitution));
+    add(text.incomeCondition, income === null ? null : income <= 250000);
+    add(text.siblingLimitQuestion, yesNo(answers.siblingLimit));
+  } else if (scheme.id === "8") {
+    add(text.yasasviCategoryQuestion, answers.applicantCategory
+      ? answers.applicantCategory === "obc"
+      : null);
+    add(text.postMatricQuestion, yesNo(answers.postMatricCourse));
+    add(text.institutionCondition, yesNo(answers.recognizedInstitution));
+    add(text.stateIncomeLimitCondition, null);
   } else {
     return {
       status: "needs",
@@ -679,9 +856,10 @@ function App() {
   const [selected, setSelected] = useState([]);
   const [profileOpen, setProfileOpen] = useState(false);
   const [compareOpen, setCompareOpen] = useState(false);
-  const emptyProfile = { submitted: false, state: "", roles: [], age: "", annualIncome: "", residence: "", courseMode: "", class12Percentile: "", otherScholarship: "", eligibleLand: "", landRecord: "", incomeTax: "", govExclusion: "", existingLpg: "", eligibleHousehold: "", ownsHouse: "", priorHousing: "" };
+  const emptyProfile = { submitted: false, state: "", roles: [], age: "", annualIncome: "", residence: "", schemeAnswers: {} };
   const [profile, setProfile] = useState(emptyProfile);
   const [draft, setDraft] = useState(emptyProfile);
+  const [schemeDraft, setSchemeDraft] = useState({});
   const [notice, setNotice] = useState("");
   const [checkedSteps, setCheckedSteps] = useState({});
   const [resultFilter, setResultFilter] = useState("recommended");
@@ -724,6 +902,10 @@ function App() {
   const routeMatch = currentPath.match(/^\/schemes\/([^/]+)\/?$/);
   const detailScheme = routeMatch ? schemes.find((scheme) => scheme.id === decodeURIComponent(routeMatch[1])) : null;
 
+  useEffect(() => {
+    if (detailScheme) setSchemeDraft(profile.schemeAnswers?.[detailScheme.id] || {});
+  }, [detailScheme?.id]);
+
   function navigateTo(path) {
     const destination = new URL(path, window.location.origin);
     window.history.pushState({}, "", destination);
@@ -752,11 +934,23 @@ function App() {
 
   function saveProfile(event) {
     event.preventDefault();
-    const nextProfile = { ...draft, roles: [...draft.roles], submitted: true };
+    const nextProfile = { ...draft, roles: [...draft.roles], schemeAnswers: profile.schemeAnswers, submitted: true };
     setProfile(nextProfile);
     setResultFilter("recommended");
     setProfileOpen(false);
     window.setTimeout(() => document.getElementById("schemes")?.scrollIntoView({ behavior: "smooth" }), 100);
+  }
+
+  function saveSchemeAnswers(event) {
+    event.preventDefault();
+    if (!detailScheme) return;
+    setProfile((current) => ({
+      ...current,
+      schemeAnswers: {
+        ...current.schemeAnswers,
+        [detailScheme.id]: { ...schemeDraft },
+      },
+    }));
   }
 
   function toggleRole(role) {
@@ -785,6 +979,8 @@ function App() {
   if (detailScheme) {
     const evaluation = evaluateScheme(detailScheme, profile, t, language);
     const illustration = schemeIllustrations[detailScheme.category];
+    const schemeQuestions = schemeQuestionDefinitions[detailScheme.id] || [];
+    const schemeAnswersSaved = Object.prototype.hasOwnProperty.call(profile.schemeAnswers || {}, detailScheme.id);
     return (
       <div className="app-shell scheme-detail-page">
         <header className="site-header">
@@ -807,11 +1003,36 @@ function App() {
           <div className="scheme-detail-layout">
             <div className="scheme-detail-primary">
               <figure className={`scheme-illustration illustration-${detailScheme.category}`}>
-                <a className="scheme-photo-link" href={illustration.source} target="_blank" rel="noreferrer">
+                <div className="scheme-photo-link">
                   <img src={illustration.src} alt={illustration.alt} width="960" height="540" />
-                </a>
-                <figcaption><a href={illustration.source} target="_blank" rel="noreferrer">Photo: {illustration.credit}</a></figcaption>
+                </div>
+                <figcaption>Photo source: <a href={illustration.source} target="_blank" rel="noreferrer">{illustration.credit}</a></figcaption>
               </figure>
+              <section className="detail-panel scheme-question-panel">
+                <h2>{t.answerSchemeQuestions}</h2>
+                <p>{t.schemeQuestionsIntro}</p>
+                {!profile.submitted && <div className="common-profile-prompt">
+                  <p>{t.commonProfileNeeded}</p>
+                  <button type="button" className="profile-link" onClick={() => { openProfile(); navigateTo("/#schemes"); }}>{t.openCommonProfile}</button>
+                </div>}
+                <form onSubmit={saveSchemeAnswers} className="scheme-question-form">
+                  <div className="scheme-question-grid">
+                    {schemeQuestions.map((question) => <AnswerSelect
+                      key={question.key}
+                      label={t[question.label]}
+                      value={schemeDraft[question.key] || ""}
+                      onChange={(value) => setSchemeDraft((current) => ({ ...current, [question.key]: value }))}
+                      text={t}
+                      options={question.options
+                        ? question.options.map((option, index) => ({ value: question.values[index], label: t[option] }))
+                        : [{ value: "yes", label: t.yes }, { value: "no", label: t.no }]}
+                    />)}
+                  </div>
+                  <button type="submit" className="save-button">{t.saveSchemeAnswers}<Icon name="arrow" size={16} /></button>
+                  {schemeAnswersSaved && <p className="saved-profile-note"><Icon name="check" size={14} />{t.schemeAnswersSaved}</p>}
+                </form>
+                <p className="scheme-question-note">{t.currentRuleNote}</p>
+              </section>
               <section className="detail-panel">
                 <h2>{t.whyMatch}</h2>
                 <p>{reasonText(evaluation, t, language, detailScheme)}</p>
@@ -853,6 +1074,7 @@ function App() {
             </div>
             <aside className="scheme-detail-aside">
               <div className="detail-benefit-card"><span>{t.benefitLabel}</span><strong>{language === "hi" ? detailScheme.benefitHi : detailScheme.benefit}</strong></div>
+              <button className="compare-button" onClick={() => { openProfile(); navigateTo("/#schemes"); }}>{t.openCommonProfile}</button>
               <button className={selected.includes(detailScheme.id) ? "compare-button selected" : "compare-button"} onClick={() => toggleCompare(detailScheme.id)} aria-pressed={selected.includes(detailScheme.id)}>{selected.includes(detailScheme.id) ? t.selected : t.compare}</button>
               <p>{t.leadershipDisclaimer}</p>
             </aside>
@@ -959,14 +1181,14 @@ function App() {
             <span className="public-service-disclaimer">{t.leadershipDisclaimer}</span>
           </div>
           <div className="leadership-photos">
-            <a className="leader-photo-card" href="https://commons.wikimedia.org/wiki/File:Official_Photograph_of_Prime_Minister_Narendra_Modi_Portrait.png" target="_blank" rel="noreferrer">
+            <article className="leader-photo-card">
               <img src="/images/prime-minister.png" alt="Official portrait of Prime Minister Narendra Modi" width="800" height="945" loading="lazy" />
-              <span className="leader-photo-caption"><strong>Narendra Modi</strong><span>{t.primeMinisterRole}</span><small>Photo: Prime Minister's Office · GODL-India</small></span>
-            </a>
-            <a className="leader-photo-card" href="https://commons.wikimedia.org/wiki/File:Droupadi_Murmu_POI_official_portrait.jpg" target="_blank" rel="noreferrer">
+              <span className="leader-photo-caption"><strong>Narendra Modi</strong><span>{t.primeMinisterRole}</span><small>Photo source: <a href="https://commons.wikimedia.org/wiki/File:Official_Photograph_of_Prime_Minister_Narendra_Modi_Portrait.png" target="_blank" rel="noreferrer">Prime Minister's Office · GODL-India</a></small></span>
+            </article>
+            <article className="leader-photo-card">
               <img src="/images/president.jpg" alt="Official portrait of President Droupadi Murmu" width="800" height="1200" loading="lazy" />
-              <span className="leader-photo-caption"><strong>Droupadi Murmu</strong><span>{t.presidentRole}</span><small>Photo: President's Secretariat · GODL-India</small></span>
-            </a>
+              <span className="leader-photo-caption"><strong>Droupadi Murmu</strong><span>{t.presidentRole}</span><small>Photo source: <a href="https://commons.wikimedia.org/wiki/File:Droupadi_Murmu_POI_official_portrait.jpg" target="_blank" rel="noreferrer">President's Secretariat · GODL-India</a></small></span>
+            </article>
           </div>
         </section>
         </>}
@@ -1012,10 +1234,10 @@ function App() {
                       <div className={`screening-status screening-${evaluation.status}`}>{statusLabel(evaluation.status, t)}</div>
                     </div>
                     <figure className={`scheme-illustration illustration-${scheme.category}`}>
-                      <a className="scheme-photo-link" href={schemeIllustrations[scheme.category].source} target="_blank" rel="noreferrer" aria-label={`View photo source: ${schemeIllustrations[scheme.category].credit}`}>
+                      <div className="scheme-photo-link">
                         <img src={schemeIllustrations[scheme.category].src} alt={schemeIllustrations[scheme.category].alt} loading="lazy" decoding="async" width="960" height="540" />
-                      </a>
-                      <figcaption><a href={schemeIllustrations[scheme.category].source} target="_blank" rel="noreferrer">Photo: {schemeIllustrations[scheme.category].credit}</a></figcaption>
+                      </div>
+                      <figcaption>Photo source: <a href={schemeIllustrations[scheme.category].source} target="_blank" rel="noreferrer">{schemeIllustrations[scheme.category].credit}</a></figcaption>
                     </figure>
                     <div className="scheme-benefit"><span className="benefit-check"><Icon name="check" size={13} /></span><span>{language === "hi" ? scheme.benefitHi : scheme.benefit}</span></div>
                     <div className="scheme-card-actions">
@@ -1110,29 +1332,6 @@ function App() {
                 <label className="answer-field">{t.incomeExactLabel}<input type="number" min="0" value={draft.annualIncome} placeholder={t.incomeExactPlaceholder} onChange={(event) => setDraft({ ...draft, annualIncome: event.target.value })} /></label>
               </div>
               <label>{t.residenceLabel}<select value={draft.residence} onChange={(event) => setDraft({ ...draft, residence: event.target.value })}><option value="">{t.notSure}</option>{profileOptions.residences.map((residence) => <option key={residence.value} value={residence.value}>{residence[language]}</option>)}</select></label>
-            </div>
-            {draft.roles.includes("student") && <div className="form-group">
-              <h3>{t.answerConditions} · {categoryText[language].education}</h3>
-              <AnswerSelect label={t.courseModeLabel} value={draft.courseMode} onChange={(value) => setDraft({ ...draft, courseMode: value })} text={t} options={[{ value: "regular", label: t.yes }, { value: "other", label: t.no }, { value: "unsure", label: t.notSure }]} />
-              <AnswerSelect label={t.class12Label} value={draft.class12Percentile} onChange={(value) => setDraft({ ...draft, class12Percentile: value })} text={t} />
-              <AnswerSelect label={t.scholarshipLabel} value={draft.otherScholarship} onChange={(value) => setDraft({ ...draft, otherScholarship: value })} text={t} />
-            </div>}
-            {draft.roles.includes("farmer") && <div className="form-group">
-              <h3>{t.answerConditions} · {categoryText[language].farming}</h3>
-              <AnswerSelect label={t.landLabel} value={draft.eligibleLand} onChange={(value) => setDraft({ ...draft, eligibleLand: value })} text={t} />
-              <AnswerSelect label={t.landRecordLabel} value={draft.landRecord} onChange={(value) => setDraft({ ...draft, landRecord: value })} text={t} />
-              <AnswerSelect label={t.incomeTaxLabel} value={draft.incomeTax} onChange={(value) => setDraft({ ...draft, incomeTax: value })} text={t} />
-              <AnswerSelect label={t.governmentJobLabel} value={draft.govExclusion} onChange={(value) => setDraft({ ...draft, govExclusion: value })} text={t} />
-            </div>}
-            {draft.roles.includes("adult_woman") && <div className="form-group">
-              <h3>{t.answerConditions} · {categoryText[language].women}</h3>
-              <AnswerSelect label={t.lpgLabel} value={draft.existingLpg} onChange={(value) => setDraft({ ...draft, existingLpg: value })} text={t} />
-              <AnswerSelect label={t.poorHouseholdLabel} value={draft.eligibleHousehold} onChange={(value) => setDraft({ ...draft, eligibleHousehold: value })} text={t} />
-            </div>}
-            <div className="form-group">
-              <h3>{t.answerConditions} · {categoryText[language].housing}</h3>
-              <AnswerSelect label={t.ownsHouseLabel} value={draft.ownsHouse} onChange={(value) => setDraft({ ...draft, ownsHouse: value })} text={t} />
-              <AnswerSelect label={t.priorHousingLabel} value={draft.priorHousing} onChange={(value) => setDraft({ ...draft, priorHousing: value })} text={t} />
             </div>
             <p className="profile-privacy-note">{t.profileTip}</p>
             <div className="profile-form-actions"><button type="button" className="cancel-button" onClick={() => setProfileOpen(false)}>{t.cancel}</button><button type="submit" className="save-button">{t.checkEligibility}<Icon name="arrow" size={16} /></button></div>

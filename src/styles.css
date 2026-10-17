@@ -385,6 +385,13 @@ body { font-size: 16px; background: #fff; }
 .detail-panel li { margin-bottom: 7px; }
 .detail-panel a { color: #21638b; overflow-wrap: anywhere; }
 .detail-panel .missing-tags { margin: 8px 0; }
+.scheme-question-form { display: grid; gap: 14px; margin-top: 14px; }
+.scheme-question-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.scheme-question-form > .save-button { justify-self: start; min-height: 43px; padding-inline: 15px; }
+.scheme-question-note { margin: 14px 0 0 !important; padding-top: 12px; border-top: 1px solid #edf0f2; color: #718078; font-size: 13px; }
+.common-profile-prompt { margin-top: 12px; padding: 12px; border-radius: 6px; background: #f4f8f2; }
+.common-profile-prompt p { margin: 0 0 8px; }
+.common-profile-prompt .profile-link { display: inline-flex; min-height: 38px; padding: 0 12px; border: 1px solid #cbd9cb; border-radius: 5px; color: #315c46; cursor: pointer; }
 .detail-eligibility { margin: 0; }
 .detail-eligibility > div { padding: 10px 0; border-top: 1px solid #edf0f2; }
 .detail-eligibility dt { font-weight: 700; color: #3e5260; text-transform: capitalize; }
@@ -465,18 +472,36 @@ body { font-size: 18px; }
 .form-group > label,.answer-field { font-size: 16px; }
 .answer-field input,.answer-field select { font-size: 17px; }
 .scheme-facts { font-size: 16px; }
-.scheme-facts h4 { font-size: 17px;   .scheme-detail-main { padding-top: 20px; padding-bottom: 35px; }
-  .scheme-detail-heading h1 { font-size: 30px; }
-  .scheme-detail-heading p { font-size: 15px; }
-  .scheme-detail-layout { grid-template-columns: 1fr; gap: 14px; padding-top: 15px; }
-  .scheme-detail-aside { position: static; grid-row: 1; }
-  .detail-panel { padding: 16px; font-size: 15px; }
-  .detail-panel h2 { font-size: 19px; }
-  .detail-panel h3 { font-size: 17px; }
-}
+.scheme-facts h4 { font-size: 17px; }
 .scheme-facts dt,.scheme-facts .data-status-note { font-size: 15px; }
 .empty-state h3 { font-size: 21px; }
 .empty-state p { font-size: 16px; }
+
+@media (max-width: 650px) {
+  .scheme-detail-main { width: calc(100% - 32px); padding-top: 18px; padding-bottom: 30px; }
+  .scheme-detail-heading { padding: 14px 0 18px; }
+  .scheme-detail-heading h1 { font-size: clamp(25px, 7vw, 32px); line-height: 1.22; letter-spacing: -.5px; overflow-wrap: anywhere; }
+  .scheme-detail-heading p { margin-bottom: 12px; font-size: 14px; overflow-wrap: anywhere; }
+  .scheme-detail-layout { grid-template-columns: minmax(0, 1fr); gap: 14px; padding-top: 14px; }
+  .scheme-detail-primary { width: 100%; }
+  .scheme-detail-primary .scheme-photo-link { height: clamp(180px, 58vw, 280px); }
+  .scheme-detail-aside { position: static; grid-row: auto; gap: 10px; padding: 14px; }
+  .detail-benefit-card strong { font-size: 16px; overflow-wrap: anywhere; }
+  .detail-panel { margin-top: 12px; padding: 15px; font-size: 15px; overflow-wrap: anywhere; }
+  .detail-panel h2 { font-size: 19px; }
+  .detail-panel h3 { font-size: 17px; }
+  .detail-panel h4 { font-size: 15px; }
+  .detail-panel ul { padding-left: 19px; }
+  .scheme-question-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .scheme-question-form > .save-button { width: 100%; justify-content: center; }
+  .detail-eligibility dd { overflow-wrap: anywhere; }
+  .detail-checklist li label { gap: 9px; }
+  .scheme-detail-page .site-header { width: calc(100% - 32px); }
+  .scheme-detail-page .header-actions { gap: 9px; }
+  .scheme-detail-page .language-switch button { min-width: 30px; }
+  .scheme-detail-page .back-link { font-size: 14px; }
+}
+
 .scheme-card { padding: 22px; border-radius: 12px; }
 .scheme-card-top {
   display: grid;
